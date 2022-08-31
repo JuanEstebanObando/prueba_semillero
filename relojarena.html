@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj app</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../Reloj Obans/recursos/Reloj_Espectral.webp"/>
+    
+    <link rel="stylesheet" href="../Reloj Obans/diseñoreloj.css" type="text/css">
+    <script src="../Reloj Obans/relojarena.js"></script>
+</head>
+<body>
+    
+    <!-- Contenido de la navbar -->
+    <div class="navbar">
+        <div class="titleclock">Reloj Obans</div>
+        <div class="navSemimg"> 
+            
+ <img src="../Reloj Obans/recursos/Reloj_Espectral.webp">
+        </div>
+        <!-- Botones  de la navbar -->
+        <div class="navbutton">
+            <button class="btn-digital" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/cronometro.html'">Cronómetro</button>
+            <button class="btn-reloj" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/reloj.html'">Reloj</button>
+            <button class="btn-temporizador" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/temporizador.html'">Temporizador</button>
+            <button class="btn-hourglass" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/relojarena.html'">Reloj de arena</button>
+              </div>
+        <div class="navimg"> 
+           <img src="../Reloj Obans/recursos/Semimg.jpg">
+
+        </div>
+    </div>
+    
+    <!-- Hourglass -->
+    <div class="all-hourglass">
+    <h1>RELOJ DE ARENA</h1>
+    <div class="hourglass-container">
+        
+        <div class="glass">
+            <img src="../Reloj Obans/recursos/hourglass.png" alt="NA">
+        </div>
+        <!-- Arena que está dentro del reloj -->
+        <div class="top-sand">................</div>
+        <div class="top-sandcover">.</div>
+        <div class="bottom-sand">................</div>
+        <div class="bottom-sandcover">.</div>
+
+
+        <div class="button-container-hourglass">
+            <div class="btn" onclick="iniciar()">
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="btn" onclick="pausar()">
+                <i class="fas fa-pause"></i>
+            </div>
+            <div class="btn" onclick="reiniciar()">
+                <i class="fas fa-undo-alt"></i>
+            </div>
+        </div>
+<div class="hourglasstimer" id="hourglasstimer">00:00</div>
+        
+    </div>
+        <!-- Botones para las acciones del reloj de arena -->
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj app</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../Reloj Obans/recursos/Reloj_Espectral.webp"/>
+    
+    <link rel="stylesheet" href="../Reloj Obans/diseñoreloj.css" type="text/css">
+    <script src="../Reloj Obans/temporizador.js"></script>
+</head>
+<body background="../Reloj Obans/recursos/timerwallpaper.jpg">
+
+    <!-- Contenido de la navbar -->
+    <div class="navbar">
+      <div class="titleclock">Reloj Obans</div>
+      <div class="navSemimg"> 
+          
+<img src="../Reloj Obans/recursos/Reloj_Espectral.webp">
+      </div>
+      <!-- Botones  de la navbar -->
+      <div class="navbutton">
+        <button class="btn-digital" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/cronometro.html'">Cronómetro</button>
+        <button class="btn-reloj" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/reloj.html'">Reloj</button>
+        <button class="btn-temporizador" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/temporizador.html'">Temporizador</button>
+        <button class="btn-hourglass" onclick="location.href='file:///C:/Users/jeoba/Desktop/Reloj%20Obans/relojarena.html'">Reloj de arena</button>
+
+    </div>
+      <div class="navimg"> 
+         <img src="../Reloj Obans/recursos/Semimg.jpg">
+
+      </div>
+  </div>
+
+<!-- Temporizador -->
+<h1 style="color: white;">TEMPORIZADOR</h1>
+<div class="all-chronometer">
+
+<div class="border-chronometer">
+    
+    <img src="../Reloj Obans/recursos/cronometroimg.png" alt="NA">
+    <div class="timer" id="timer">
+        00:00:00
+    </div>
+    
+</div>
+
+<!-- Botones para las funciones del cronómetro -->
+    <div class="button-container">
+        <div class="btn" onclick="iniciar()">
+          <i class="fas fa-play"></i>
+        </div>
+        <div class="btn" onclick="pausar()">
+          <i class="fas fa-pause"></i>
+        </div>
+        <div class="btn" onclick="reiniciar()">
+          <i class="fas fa-undo-alt"></i>
+        </div>
+      </div>
+    
+</div> 
+<div class="form-container">
+<input type="number" class="hours" id="hours" min="0" max="24" placeholder="Horas">
+<input type="number" class="minutes" id="minutes" min="0" max="59" placeholder="Minutos">
+<input type="number" class="seconds" id="seconds" min="0" max="10" placeholder="Segundos">
+
+
+<button class="enter-time" onclick="enterTime()">Enter</button>
+
+</div>
+</body>
+</html>
